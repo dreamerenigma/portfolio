@@ -1,0 +1,25 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Ignore list of project files
+# Ignore ALL files and directories, including subdirectories and files in them
+
+# -------- DIRECTORIES --------
+node_modules
+dist/
+build
+.parcel-cache
+.vscode
+packages
+venv
+.idia
+vendor
+build
+
+# -------- FILES --------
+.hintrc
+.htaccess
+sitemap.xml
+robots.txt
+archive
+package-lock.json
+.env

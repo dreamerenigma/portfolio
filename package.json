@@ -1,0 +1,53 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites. **portfolio** © [Andrey](https://github.com/inputstudios)  \r Authored and maintained by Andrey Trepalin.",
+  "author": "Andrey Trepalin <jarekismail@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "keywords": [
+    "template",
+    "front-end",
+    "portfolio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inputstudios/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inputstudios/portfolio/issues"
+  },
+  "homepage": "https://github.com/inputstudios/portfolio#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve ./base.html --open -p 3000 --host 127.0.0.1",
+    "build": "parcel build ./base.html --dist-dir build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "browserslist": "^4.21.10",
+    "gsap": "^3.12.2",
+    "jquery": "^3.7.0",
+    "js-cookie": "^3.0.5",
+    "portfolio": "file:"
+  },
+  "targets": {
+    "main": false
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "not IE 11"
+  ],
+  "files": [
+    "LICENSE.txt",
+    "package.json",
+    "README.md"
+  ]
+}

@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<!-- Coding by Andrey Trepalin | https://inputstudios.ru -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="description" content="Web developer, with extensive knowledge and many years of experience in the
+		field of web technologies and UI / UX design, who fulfills orders with high quality" />
+  <meta name="p:domain_verify" content="f562e4b51e07325bc58c0385c3190890" />
+  <!--===================== BOXICONS CSS =====================-->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!--===================== FAVICON =====================-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!--===================== UNICONS =====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!--===================== SWIPER CSS =====================-->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!--===================== CSS =====================-->
+  <link rel="stylesheet" href="./css/style.css?v=1.0.7" />
+  <link rel="stylesheet" href="./css/cookie.css?v=1.0.3" />
+  <!--===================== CHATBOT FLASK =====================-->
+  <link rel="stylesheet" href="./css/chatbot.css?v=1.0.3" />
+  <!--===================== AOS CSS =====================-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Yandex reCAPTCHA -->
+  <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94462884, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/94462884" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <title class="lng-title">Responsive Portfolio by Input Studios</title>
+</head>
+
+<body>
+  <!--===================== HEADER =====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="lng-nav__logo">Andrey</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>
+              <span class="lng-nav__home">Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>
+              <span class="lng-nav__about">About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>
+              <span class="lng-nav__skills">Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>
+              <span class="lng-nav__services">Services</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>
+              <span class="lng-nav__portfolio">Portfolio</span>
+            </a>
+          </li>
+          <li class="lng-nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>
+              <span class="lng-nav__contactme">Contactme</span>
+            </a>
+          </li>
+          </select>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <!-- Language Selection -->
+      <div class="lang-menu">
+        <div class="custom-select">
+          <div class="selected-option">
+            <img id="selectedLangFlag" src="https://i.ibb.co/489wXn1/RU.png" alt="Russian Flag">
+            <span id="selectedLangText">Russian</span>
+          </div>
+          <div class="languageSelect">
+            <div class="option" data-value="ru">
+              <img src="https://i.ibb.co/489wXn1/RU.png" alt="Russian Flag">
+              <span class="lng-language_ru">Russian</span>
+            </div>
+            <div class="option" data-value="us">
+              <img src="https://i.ibb.co/LtPNm0n/US.png" alt="English Flag">
+              <span class="lng-language_en">English</span>
+            </div>
+            <div class="option" data-value="es">
+              <img src="https://i.ibb.co/x59Tvcs/ES.png" alt="Spanish Flag">
+              <span class="lng-language_es">Spanish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme change button -->
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--===================== MAIN =====================-->
+  <main class="main">
+    <!--==================== PRELOADER ====================-->
+    <div class="preloader" id="preloader">
+      <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span class="lng-loading">Loading</span>
+      </div>
+    </div>
+
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div data-aos="fade-right" class="home__content grid">
+          <div class="home__social">
+            <a href="https://linkedin.com/in/trepalin-andrey/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://dribbble.com/inputstudios/" target="_blank" class="home__social-icon">
+              <i class="uil uil-dribbble"></i>
+            </a>
+            <a href="https://github.com/inputstudios/" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+          <div class="home__img">
+            <img src="./img/bg_image.webp" alt="">
+          </div>
+          <div class="home__data">
+            <h1 class="lng-home__title">Hi, I'am Andrey</h1>
+            <h3 class="lng-home__subtitle">Fullstack-developer</h3>
+            <p class="lng-home__description">High level of knowledge in the field of web design and development,
+              quality of completed orders.</p>
+            <a href="#contact" class="button">
+              <span class="lng-home__send">Contact Me</span>
+              <i class="uil uil-message download-cv-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="home__scroll">
+          <div class="home__scroll-container">
+            <a href="#about" class="home__scroll-button button--flex"></a>
+            <a href="#about"><span class="lng-home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 data-aos="fade-down" class="lng-section__about">About Me</h2>
+      <p data-aos="fade-up" class="lng-section__introduction">My introduction</p>
+      <div class="about__container container grid" data-aos="zoom-in" data-aos-delay="200">
+        <img data-aos="flip-left" src="./img/about.webp" alt="" class="about__img">
+        <div class="about__data">
+          <p data-aos="flip-left" class="lng-about__description">Web developer, with extensive knowledge and many years
+            of experience in
+            the field of web technologies and UX/UI design, who fulfills orders with high quality.</p>
+          <div class="about__info">
+            <div>
+              <span data-aos="flip-up" class="about__info-title">08+</span>
+              <span data-aos="flip-up" class="lng-about__info-year">Years <br> experience</span>
+            </div>
+            <div>
+              <span data-aos="flip-up" class="about__info-title">20+</span>
+              <span data-aos="flip-up" class="lng-about__info-completed">Completed <br> projects</span>
+            </div>
+            <div>
+              <span data-aos="flip-up" class="about__info-title">05+</span>
+              <span data-aos="flip-up" class="lng-about__info-companies">Companies <br> worked</span>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="about__buttons">
+            <a href="./pdf/Andrey-Cv.pdf" target="_blank" class="download-cv button--flex">
+              <span class="lng-download__cv">Download CV</span><i class="uil uil-download-alt download__cv-icon"></i>
+              <span class="download-cv-waves"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 data-aos="fade-down" class="lng-section__skills">Skills</h2>
+      <p data-aos="fade-up" class="lng-section__level">My techical level</p>
+
+      <div class="skills__container container grid">
+        <div>
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 data-aos="fade-right" class="lng-skills__frontend">Frontend developer</h1>
+                <span data-aos="fade-right" class="lng-skills__more__front">More than 4 years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div data-aos="fade-up-right" class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__react"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 data-aos="fade-right" class="lng-skills__backend">Backend developer</h1>
+                <span data-aos="fade-right" class="lng-skills__more__back">More than 2 years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div data-aos="fade-up-right" class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__php"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node Js</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__node"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Firebase</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__firebase"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__number">55%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!--==================== SKILLS 3 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 data-aos="fade-left" class="lng-skills__designer">Designer</h1>
+                <span data-aos="fade-left" class="lng-skills__more__design">More than 5 years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div data-aos="fade-up-left" class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__figma"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Sketch</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__sketch"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Photoshop</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__photoshop"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+      <h2 data-aos="fade-down" class="lng-section__qualification">Qualification</h2>
+      <p data-aos="fade-up" class="lng-section__journey">My personal journey</p>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target="#education">
+            <i data-aos="flip-left" class="uil uil-graduation-cap qualification__icon"></i>
+            <p data-aos="flip-left" class="lng-education">Education</p>
+          </div>
+
+          <div class="qualification__button button--flex" data-target="#work">
+            <i data-aos="flip-left" class="uil uil-briefcase-alt qualification__icon"></i>
+            <p data-aos="flip-left" class="lng-work">Work</p>
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATION CONTENT 1 ====================-->
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div data-aos="zoom-in-up">
+                <h3 class="lng-qualification__computer">Computer Enginner</h3>
+                <span class="lng-qualification__colledge">Techical Colledge - Ulyanovsk</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2006 - 2010
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div data-aos="zoom-out-down">
+                <h3 class="lng-qualification__design">Web Design</h3>
+                <span class="lng-qualification__skillbox">Skillbox - Moscow</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2017 - 2019
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div data-aos="zoom-out-up">
+                <h3 class="lng-qualification__development">Web Development</h3>
+                <span class="lng-qualification__insitute">Techical Insitute - Ulyanovsk</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2020 - 2025
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 4 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+
+              <div data-aos="zoom-in-up">
+                <h3 class="lng-qualification__master">Master in UX/UI</h3>
+                <span class="lng-qualification__netology">Netology - Ulyanovsk</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2020 - 2022
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== QUALIFICATION CONTENT 2 ====================-->
+          <div class="qualification__content" data-content id="work">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div data-aos="zoom-in-up">
+                <h3 class="lng-qualification__software">Software Enginner</h3>
+                <span class="lng-qualification__simm">SimbirskMplus - Ulyanovsk</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2016 - 2018
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div data-aos="zoom-out-down">
+                <h3 class="lng-qualification__front">Frontend Developer</h3>
+                <span class="lng-qualification__inputstudios">Input Studios - Ulyanovsk</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2020 - 2022
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div data-aos="zoom-in-up">
+                <h3 class="lng-qualification__designer">UI Designer</h3>
+                <span class="lng-qualification__figma">Figma - Russia</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018 - 2020
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 data-aos="fade-down" class="lng-section__services">Services</h2>
+      <p data-aos="fade-up" class="lng-section__offer">What i offer</p>
+
+      <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->
+        <div class="services__content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div>
+            <i class="uil uil-web-grid services__icon"></i>
+            <h3 class="lng-services__designer">UI/UX Design</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            <p class="lng-view__more__designer">View More</p>
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="lng-services__modal-designer">UI/UX Design</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__interface">I develop the UI design</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__develop">Website development</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__interactions">I design UX interactions</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__brand">I position your company brand</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--==================== SERVICES 2 ====================-->
+        <div class="services__content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <div>
+            <i class="uil uil-arrow services__icon"></i>
+            <h3 class="lng-services__front">Frontend Development</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            <p class="lng-view__more__front">View More</p>
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="lng-services__modal-front">Frontend Development</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__adaptability">Adaptability and mobile design.</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__builder">Project Builder.</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__crossbrowser">Crossbrowser compatibility.</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__testing">Testing and Debugging.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--==================== SERVICES 3 ====================-->
+        <div class="services__content" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div>
+            <i class="uil uil-pen services__icon"></i>
+            <h3 class="lng-services__brand">Branding Design</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            <p class="lng-view__more__brand">View More</p>
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="lng-services__modal-brand">Branding Design</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__logo">Logo design</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__identity">Identity development</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__guideline">Guideline development</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p class="lng-service__analysis">Analysis of the work performed</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 data-aos="fade-down" class="lng-section__portfolio">My Portfolio</h2>
+      <p data-aos="fade-up" class="lng-section__recent-work">Most recent works</p>
+
+      <div data-aos="flip-down" class="portfolio__filters">
+        <p class="lng-portfolio__all active-portfolio" data-filter="all">All</p>
+        <p class="lng-portfolio__web" data-filter=".web">Web</p>
+        <p class="lng-portfolio__app" data-filter=".app">App</p>
+        <p class="lng-portfolio__design" data-filter=".design">Design</p>
+      </div>
+
+      <div class="portfolio__container container grid">
+        <!--==================== PORTFOLIO CARD 1 ====================-->
+        <div class="portfolio__card mix web" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-index="1" data-popup="#popup-1">
+          <img src="./img/work-1.webp" alt="" class="portfolio__img">
+          <h3 class="lng-portfolio__web-card">Web design</h3>
+          <span id="detailsButton" class="lng-portfolio__button" data-popup="#popup-1">
+            <span class="lng-details-1">Details</span>
+            <i class="uil uil-arrow-right portfolio__button-icon"></i>
+          </span>
+        </div>
+
+        <!--==================== PORTFOLIO CARD 2 ====================-->
+        <div class="portfolio__card mix app" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-index="2" data-popup="#popup-2">
+          <img src="./img/work-2.webp" alt="" class="portfolio__img">
+          <h3 class="lng-portfolio__app-card-2">App Design</h3>
+          <span id="detailsButton" class="lng-portfolio__button" data-popup="#popup-2">
+            <span class="lng-details-2">Details</span>
+            <i class="uil uil-arrow-right portfolio__button-icon"></i>
+          </span>
+        </div>
+
+        <!--==================== PORTFOLIO CARD 3 ====================-->
+        <div class="portfolio__card mix design" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-index="3" data-popup="#popup-3">
+          <img src="./img/work-3.webp" alt="" class="portfolio__img">
+          <h3 class="lng-portfolio__design-card">Brand Design</h3>
+          <span id="detailsButton" class="lng-portfolio__button" data-popup="#popup-3">
+            <span class="lng-details-3">Details</span>
+            <i class="uil uil-arrow-right portfolio__button-icon"></i>
+          </span>
+        </div>
+
+        <!--==================== PORTFOLIO CARD 4 ====================-->
+        <div class="portfolio__card mix app" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-index="4" data-popup="#popup-4">
+          <img src="./img/work-4.webp" alt="" class="portfolio__img">
+          <h3 class="lng-portfolio__app-card-4">App Design</h3>
+          <span id="detailsButton" class="lng-portfolio__button" data-popup="#popup-4">
+            <span class="lng-details-4">Details</span>
+            <i class="uil uil-arrow-right portfolio__button-icon"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO POPUP 1 ====================-->
+    <div class="portfolio__popup" id="popup-1">
+      <div class="portfolio__popup-inner">
+        <div class="portfolio__popup-content grid">
+          <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+          <div class="pp__thumbnail">
+            <img src="./img/work-1.webp" alt="" class="portfolio__popup-img">
+          </div>
+          <div class="portfolio__popup-info">
+            <div class="lng-portfolio__popup-subtitle-1">Featured — Design</div>
+            <div class="portfolio__popup-body">
+              <h3 class="lng-details__title-1">Design show online film theater Film Online</h3>
+              <p class="lng-details__description-1">KinoDom Online is a unique space for cinema lovers,
+                where you can enjoy a wide selection of films and TV series right from the comfort of your home.</p>
+              <ul class="details__info">
+                <li class="lng-created-details-1">Created — 20 aug 2022</li>
+                <li class="lng-techologies-details-1">Techologies — HTML, CSS, PHP</li>
+                <li class="lng-role-details-1">Role — Fullstack developer</li>
+                <li class="lng-view-details-1">View — </li>
+                <span class="language-link">
+                  <span class="language-link-text">
+                    <a href="#" target="_blank" rel="noopener noreferrer">https://kinodom.ru</a>
+                  </span>
+                </span>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PORTFOLIO POPUP 2 ====================-->
+    <div class="portfolio__popup" id="popup-2">
+      <div class="portfolio__popup-inner">
+        <div class="portfolio__popup-content grid">
+          <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+          <div class="pp__thumbnail">
+            <img src="./img/work-2.webp" alt="" class="portfolio__popup-img">
+          </div>
+          <div class="portfolio__popup-info">
+            <div class="lng-portfolio__popup-subtitle-2">Featured — Design</div>
+            <div class="portfolio__popup-body">
+              <h3 class="lng-details__title-2">Application for free communication Dialogue Messenger</h3>
+              <p class="lng-details__description-2">Chatting app with completely free features for messaging, video chats,
+                voice calls, group messages, profile photo editing, profile status.</p>
+              <ul class="details__info">
+                <li class="lng-created-details-2">Created — Work in Progress</li>
+                <li class="lng-techologies-details-2">Techologies — Kotlin</li>
+                <li class="lng-role-details-2">Role — Fullstack developer</li>
+                <div class="apk__button">
+                  <a href="./apk/Dialog.apk" class="button button--flex">
+                    Download <span class="apk__text">&nbsp;.APK</span><span class="apk__size">&nbsp;(18.4
+                      MB)</span><i class="uil uil-download-alt button__icon"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PORTFOLIO POPUP 3 ====================-->
+    <div class="portfolio__popup" id="popup-3">
+      <div class="portfolio__popup-inner">
+        <div class="portfolio__popup-content grid">
+          <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+          <div class="pp__thumbnail">
+            <img src="./img/work-3.webp" alt="" class="portfolio__popup-img">
+          </div>
+          <div class="portfolio__popup-info">
+            <div class="lng-portfolio__popup-subtitle-3">Featured — Design</div>
+            <div class="portfolio__popup-body">
+              <h3 class="lng-details__title-3">Application for food delivery without leaving home</h3>
+              <p class="lng-details__description-3">The Food Delivery app provides a convenient way to order food online and have it delivered to your home.
+                With this application, users can easily select dishes from restaurants, cafes and eateries, place orders and enjoy fresh and delicious food without leaving home.</p>
+              <ul class="details__info">
+                <li class="lng-created-details-3">Created — Work in Progress</li>
+                <li class="lng-techologies-details-3">Techologies — Dart</li>
+                <li class="lng-role-details-3">Role - Fullstack developer</li>
+                <div class="apk__button">
+                  <a href="./apk/Food Delivery.apk" class="button button--flex">
+                    Download <span class="apk__text">&nbsp;.APK</span><span class="apk__size">&nbsp;(19.7
+                      MB)</span><i class="uil uil-download-alt button__icon"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PORTFOLIO POPUP 4 ====================-->
+    <div class="portfolio__popup" id="popup-4">
+      <div class="portfolio__popup-inner">
+        <div class="portfolio__popup-content grid">
+          <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+          <div class="pp__thumbnail">
+            <img src="./img/work-4.webp" alt="" class="portfolio__popup-img">
+          </div>
+          <div class="portfolio__popup-info">
+            <div class="lng-portfolio__popup-subtitle-4">Featured — Design</div>
+            <div class="portfolio__popup-body">
+              <h3 class="lng-details__title-4">Music player for playing any audio formats with equalizer</h3>
+              <p class="lng-details__description-4">Maestro is an innovative music application for the Android platform, created for true music lovers.
+                The app provides a unique experience in managing and listening to music, combining an elegant interface and advanced technology.</p>
+              <ul class="details__info">
+                <li class="lng-created-details-4">Created — July 14, 202320</li>
+                <li class="lng-techologies-details-4">Techologies — Kotlin</li>
+                <li class="lng-role-details-4">Role — Fullstack developer</li>
+                <div class="apk__button">
+                  <a href="./apk/Maestro.apk" class="button button--flex">
+                    Download <span class="apk__text">&nbsp;.APK</span><span class="apk__size">&nbsp;(4.98
+                      MB)</span><i class="uil uil-download-alt button__icon"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PROJECT IN MIND ====================-->
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+          data-aos-delay="300" data-aos-offset="0">
+          <div class="project__data">
+            <h2 class="lng-project__title">You have a new project</h2>
+            <p class="lng-project__description">Contact me now and get a 30% discount on your new project.</p>
+            <a href="#contact" class="button button--flex button--white">
+              <p class="lng-project__contactme">Contact Me</p>
+              <i class="uil uil-message project__icon button__icon"></i>
+            </a>
+          </div>
+          <img src="./img/project.webp" alt="My Photo" class="project__img">
+        </div>
+      </div>
+    </section>
+
+    <!--==================== TESTIMONIALS ====================-->
+    <section class="testimonial section">
+      <h2 data-aos="fade-down" class="lng-section__testimonials">Testimonials</h2>
+      <p data-aos="fade-up" class="lng-section__saying">My client saying</p>
+
+      <div class="testimonial__container container swiper">
+        <div class="swiper-wrapper">
+          <!--==================== TESTIMONIAL 1 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./img/testimonial1.webp" alt="" class="testimonial__img">
+                <div>
+                  <h3 class="lng-testimonial__name-1">Sofia Morozova</h3>
+                  <p class="lng-testimonial__client-1">Client</p>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="lng-testimonial__description-1">It was necessary to make a website design
+              Andrey Trepalin helped me in this within 24 hours the problem was solved.
+            </p>
+          </div>
+          <!--==================== TESTIMONIAL 2 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./img/testimonial2.webp" alt="" class="testimonial__img">
+                <div>
+                  <h3 class="lng-testimonial__name-two">Maria Sidorova</h3>
+                  <p class="lng-testimonial__client-two">Client</p>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="lng-testimonial__description-two">I express my gratitude to the company
+              Input Studios for the work done with my portfolio site.
+            </p>
+          </div>
+          <!--==================== TESTIMONIAL 3 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./img/testimonial3.webp" alt="" class="testimonial__img">
+                <div>
+                  <h3 class="lng-testimonial__name-three">Egor Danilov</h3>
+                  <span class="lng-testimonial__client-three">Client</span>
+                </div>
+              </div>
+              <div>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+                <i class="uil uil-star testimonial__icon-star"></i>
+              </div>
+            </div>
+            <p class="lng-testimonial__description-three">The customer asked me to make
+              new effects for the site, he turned to Input Studios,
+              Andrey helped me, thanks to him for his help.
+            </p>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-testimonial"></div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <h2 data-aos="fade-down" class="lng-section__contactme">Contact Me</h2>
+      <p data-aos="fade-up" class="lng-contactme__desc">If you have any questions or suggestions for cooperation, please
+        fill out the
+        form below.</p>
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <div class="contact__information">
+
+            <!--==================== CONTACT CARD 1 ====================-->
+            <div data-aos="fade-right" class="contact__card">
+              <i class="uil uil-whatsapp contact__card-icon"></i>
+              <h3 class="contact__card-title">WhatsApp</h3>
+              <span class="contact__card-data">+7-999-194-03-98</span>
+              <span class="contact__button">
+                <a href="whatsapp://send?phone=+9370309861" target="_blank">
+                  <font color='#E06257'>
+                    <p class="lng-whatsapp__callme">Call me</p>
+                  </font>
+                </a>
+                <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
+
+            <!--==================== CONTACT CARD 2 ====================-->
+            <div data-aos="fade-right" class="contact__card">
+              <i class="uil uil-envelope-edit contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">jarekismail@gmail.com</span>
+              <span class="contact__button">
+                <a href="mailto:jarekismail@gmail.com?body=Привет, подпишитесь на рассылку">
+                  <font color='#E06257'>
+                    <p class="lng-email__writeme">Write me</p>
+                  </font>
+                </a>
+                <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
+
+            <!--==================== CONTACT CARD 3 ====================-->
+            <div data-aos="fade-right" class="contact__card">
+              <i class="uil uil-vk-alt contact__card-icon"></i>
+              <h3 class="contact__card-title">VK</h3>
+              <span class="contact__card-data">r3duct</span>
+              <span class="contact__button">
+                <a href="https://vk.com/r3duct" target="_blank">
+                  <font color='#E06257'>
+                    <p class="lng-vk__writeme">Write me</p>
+                  </font>
+                </a>
+                <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== CONTACT FORM ====================-->
+        <div class="contact__content">
+          <form action="send_mail.php" name="form" method="POST" id="myForm">
+            <div data-aos="fade-left" class="input__container">
+              <input type="text" class="input" id="name" name="name"
+                data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+(([,.] |[ '-])[а-яА-ЯёЁa-zA-Z0-9]+)*([.,'-]?)$" />
+              <label for="name" class="lng-username">Username</label>
+              <span class="lng-username">Username</span>
+            </div>
+            <div data-aos="fade-left" class="input__container">
+              <input type="email" class="input" id="email" name="email"
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+              <label for="email" class="lng-email">Email</label>
+              <span>Email</span>
+            </div>
+            <div data-aos="fade-left" class="input__container">
+              <input type="phone" class="input" id="phone" name="phone" data-reg="^((\+7|7|8)+([0-9]){10})$" />
+              <label for="phone" class="lng-phone">Phone</label>
+              <span class="lng-phone">Phone</span>
+            </div>
+            <div data-aos="fade-left" class="input__container-message textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="message" class="lng-message">Message</label>
+              <span class="lng-message">Message</span>
+            </div>
+            <div
+              style="height: 100px"
+              id="captcha-container"
+              class="smart-captcha"
+              data-sitekey="ysc1_ZHdP6jLmO4Mb2yMhAGvLXe4xSceqBtoMJnedV5iR1d4f6ec7">
+            </div>
+            <div data-aos="fade-up">
+              <button type="submit" id="button" class="button button--flex">
+                <p class="lng-send-message">Send Message</p>
+                <i class="uil uil-navigator button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </h2>
+    </section>
+
+    <!--===================== FOOTER =====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="lng-footer__title">Andrey</h1>
+            <span class="lng-footer__subtitle">Fullstack developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">
+                <p class="lng-footer__services">Services</p>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">
+                <p class="lng-footer__work">Work</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">
+                <p class="lng-footer__contact">Contact</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="https://linkedin.com/in/trepalin-andrey/" target="_blank" class="footer__social">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://dribbble.com/inputstudios/" target="_blank" class="footer__social">
+              <i class="uil uil-dribbble"></i>
+            </a>
+            <a href="https://github.com/inputstudios/" target="_blank" class="footer__social">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!--YooMoney-->
+        <div class="yoomoney-btn">
+          <iframe src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=AbdT9AQtYk4.231001&" width="330"
+            height="50" frameborder="0" allowtransparency="true" scrolling="no">
+          </iframe>​
+        </div>
+        <!--/YooMoney-->
+
+        <!--LiveInternet counter-->
+        <div class="liveinternet">
+          <noindex>
+            <a href="https://www.liveinternet.ru/click" target="_blank" rel="nofollow"><img id="licntB216" width="88"
+                height="31" style="border:0"
+                title="LiveInternet: shows the number of views in 24 hours, visitors in 24 hours and today"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt="" /></a>
+              <script async>(function (d, s) {
+                d.getElementById("licntB216").src =
+                  "https://counter.yadro.ru/hit?t12.18;r" + escape(d.referrer) +
+                  ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                    (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+                  ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+              })
+                (document, screen)</script>
+          </noindex>
+        </div>
+        <!--/LiveInternet-->
+
+        <div class="footer__privacy">
+          <a href="https://inputstudios.ru/privacy.html" target="_blank">
+            <p class="lng-privacy">Privacy policy</p>
+          </a>
+        </div>
+
+        <div class="footer_reCaptcha">
+          <p class="lng-recaptcha">This site is protected by reCAPTCHA from Yandex,</p>
+          <a class="lng-privacy" href="https://policies.google.com/privacy" target="_blank">&nbsp;Privacy policy</a>
+          <a class="lng-term" href="https://policies.google.com/terms" target="_blank">&nbsp;and&nbsp;Terms of Service
+            apply</a>
+        </div>
+
+        <div class="footer__item">
+          <div>
+            <p class="lng-footer__copy">&#169; 2022-2024
+              <a href="https://inputstudios.ru" target="_blank">Input Studios.ru.&nbsp;</a>
+            </p>
+          </div>
+          <div>
+            <p class="lng-footer__right"> All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--===================== SCROLL UP =====================-->
+    <div class="scroll__up">
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+      </a>
+    </div>
+
+    <!--===================== CHATBOT =====================-->
+    <div class="chatbot">
+      <div class="chatbox">
+        <div class="chatbox__support">
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+            </div>
+            <div class="chatbox__content--header">
+              <h4 class="lng-chatbox__heading--header">Chat support</h4>
+              <p class="lng-chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+              <span class="close-btn chatbox-close"><i class="uil uil-times"></i></span>
+            </div>
+          </div>
+          <div class="chatbox__messages">
+            <div></div>
+          </div>
+          <div class="chatbox__footer">
+            <input type="text" placeholder="Write a message..." data-translate="lng-write-message">
+            <button class="lng-chatbox__send--footer send__button">Send</button>
+          </div>
+        </div>
+        <div class="chatbox__button">
+          <button data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <svg width="36" height="29" viewBox="0 0 36 29" xmlns="http://www.w3.org/2000/svg">
+              <path class="chatbox-svg-message"
+                d="M28.2857 10.5714C28.2857 4.88616 21.9576 0.285714 14.1429 0.285714C6.32813 0.285714 0 4.88616 0 10.5714C0 13.8259 2.08929 16.7388 5.34375 18.6272C4.66071 20.2946 3.77679 21.0781 2.9933 21.9621C2.77232 22.2232 2.51116 22.4643 2.59152 22.846C2.65179 23.1875 2.93304 23.4286 3.23438 23.4286C3.25446 23.4286 3.27455 23.4286 3.29464 23.4286C3.89732 23.3482 4.47991 23.2478 5.02232 23.1071C7.05134 22.5848 8.93973 21.721 10.6071 20.5357C11.7321 20.7366 12.9174 20.8571 14.1429 20.8571C21.9576 20.8571 28.2857 16.2567 28.2857 10.5714ZM36 15.7143C36 12.3594 33.7902 9.38616 30.3951 7.51786C30.6964 8.50223 30.8571 9.52679 30.8571 10.5714C30.8571 14.1674 29.0089 17.4821 25.654 19.933C22.5402 22.183 18.4621 23.4286 14.1429 23.4286C13.5603 23.4286 12.9576 23.3884 12.375 23.3482C14.8862 24.9955 18.221 26 21.8571 26C23.0826 26 24.2679 25.8795 25.3929 25.6786C27.0603 26.8638 28.9487 27.7277 30.9777 28.25C31.5201 28.3906 32.1027 28.4911 32.7054 28.5714C33.0268 28.6116 33.3281 28.3504 33.4085 27.9888C33.4888 27.6071 33.2277 27.3661 33.0067 27.1049C32.2232 26.221 31.3393 25.4375 30.6563 23.7701C33.9107 21.8817 36 18.9888 36 15.7143Z"
+                fill="#581B98" />
+            </svg>
+            <svg id="Icons" width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
+              class="chatbox-svg-bot">
+              <path d="M47.625,38.045v-0.17a3,3 0 0 0 -3,-3h-28a3,3 0 0 0 -3,3v0.17l1.26,6.25a17,17 0 0 0 31.48,0z"
+                fill="#bfd9ef" />
+              <path d="M12.625,12.875v14h-1c-2.21,0-4,-3.13-4,-7c0-3.87 1.79-7 4-7z" fill="#b0cadc" />
+              <path d="M48.625,12.875v14h1c2.21,0 4,-3.13 4,-7c0-3.87 -1.79,-7 -4,-7z" fill="#b0cadc" />
+              <path
+                d="M49.948626,12.8765C50.021807,17.500422 49.9375,26.75 49.9375,26.75C49.934,31.168277 46.043278,34.875 41.625,34.875h-22c-4.418278,0 -8,-3.581722 -8,-8v-14c0,-4.418278 3.581722,-8 8,-8 0,0 10.842813,-0.00502 22.777137,0.00781c3.941847,0.00424 7.492664,4.5927594 7.546489,7.99369z"
+                fill="#d7e9ff" style="mix-blend-mode:normal" />
+              <path
+                d="M45.625,17.195621c0.112523,2.32402 0,9.679379 0,9.679379c0,2.209139 -1.790861,4 -4,4h-22c-2.209139,0-4,-1.790861-4,-4v-10c0,-2.209139 1.790861,-4 4,-4c0,0 14.448636,-0.142139 22.091213,0.01831c2.014318,0.04229 3.793596,1.923181 3.908787,4.302311z"
+                fill="#193870" />
+              <g fill="#21dbdb" transform="translate(6.625,-4.125)">
+                <circle cx="15.5" cy="23.5" r="2.5" />
+                <circle cx="32.48703" cy="23.428078" r="2.5" />
+                <path d="M22,27h4a1,1 0 0 1 1,1 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 1,1 0 0 1 1,-1z" />
+              </g>
+              <path
+                d="M15.002,43.95c-1.335,3.811-4.509,8.425-6.228,7.882-1.719,-0.543-1.335,-6.044 0,-9.854 1.335,-3.81 3.131,-4.486 4.851,-3.936 1.72,0.55 2.723,2.098 1.377,5.908z"
+                fill="#d7e9ff" />
+              <path
+                d="M46.248,43.95c1.335,3.811,4.509,8.422,6.227,7.882 1.718,-0.54 1.336,-6.044 0,-9.854 -1.336,-3.81 -3.13,-4.486 -4.85,-3.936 -1.72,0.55 -2.723,2.098 -1.377,5.908z"
+                fill="#d7e9ff" />
+              <circle cx="30.625" cy="43.875" fill="#193870" r="4" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--===================== POPUP COOKIE CONSENT =====================-->
+    <div class="cookie-popup">
+      <div class="cookie-title">
+        <i class="bx bx-cookie"></i>
+        <h2 class="lng-cookie-consent">Cookie Consent</h2>
+      </div>
+
+      <div class="data">
+        <p class="lng-cookie-description">This website use cookie to help you have a superior adn more releavnt browsing
+          expirence on the website.</p>
+        <a class="lng-button-read-more" href="#" target="_blank">Read more...</a>
+      </div>
+      <div class="buttons">
+        <button class="lng-button-accept" id="acceptBtn">Accept</button>
+        <button class="lng-button-decline">Decline</button>
+      </div>
+    </div>
+  </main>
+
+  <!--===================== MIXTUP FILTER =====================-->
+  <script src="./js/mixitup.min.js"></script>
+
+  <!--===================== SWIPER JS =====================-->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!--===================== MAIN JS =====================-->
+  <script src="./js/main.js"></script>
+
+  <!--===================== LANGUAGE SELECTION =====================-->
+  <script src="./js/lang.js"></script>
+  <script src="./js/changelang.js"></script>
+
+  <!--===================== FEEDBACK FORM =====================-->
+  <script src="./js/app.js"></script>
+
+  <!--===================== COOKIE =====================-->
+  <script type="module" src="./js/cookie.js" defer></script>
+
+  <!--===================== JQUERY JS =====================-->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <!--===================== JS-COOKIE =====================-->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+  <!--===================== CHATBOT FLASK =====================-->
+  <script src="./js/chatbot.js"></script>
+
+  <!--===================== AOS JS =====================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
