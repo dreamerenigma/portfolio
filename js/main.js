@@ -342,7 +342,10 @@ themeButton.addEventListener('click', () => {
 })
 
 /*======================== PRELOADER ========================*/
-preloader.classList.add('preloader--hide')
+window.addEventListener('load', function () {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('preloader--hide');
+});
 
 /*======================== Yandex reCAPTCHA ========================*/
 document.addEventListener("DOMContentLoaded", function () {
