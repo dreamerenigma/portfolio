@@ -20,8 +20,8 @@
   "homepage": "https://github.com/inputstudios/portfolio#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel serve ./base.html --open -p 3000 --host 127.0.0.1",
-    "build": "parcel build ./base.html --dist-dir build"
+    "start": "parcel serve ./index.html --open -p 3000 --host 127.0.0.1",
+    "build": "parcel build ./index.html --dist-dir build --no-source-maps --detailed-report"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
